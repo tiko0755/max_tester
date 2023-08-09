@@ -81,7 +81,21 @@ void Error_Handler(void);
 #define LED1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+extern ADC_HandleTypeDef hadc1;
 
+extern I2C_HandleTypeDef hi2c1;
+extern I2C_HandleTypeDef hi2c2;
+
+extern SPI_HandleTypeDef hspi1;
+extern SPI_HandleTypeDef hspi2;
+
+extern TIM_HandleTypeDef htim5;
+
+extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart2;
+extern UART_HandleTypeDef huart3;
+
+extern PCD_HandleTypeDef hpcd_USB_FS;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
