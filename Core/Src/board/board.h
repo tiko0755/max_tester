@@ -29,10 +29,8 @@ extern u8 g_initalDone;
 extern INPUT_DEV_T g_input;
 extern OUTPUT_DEV_T g_output;
 extern UartDev_t console;
-extern Rs485Dev_t rs485;
-extern rampDev_t stpr[2];
 
-#define APP_TIMER_COUNT (8)
+#define APP_TIMER_COUNT (16)
 extern appTmrDev_t tmr[APP_TIMER_COUNT];
 extern cmdConsumerDev_t cmdConsumer;
 
@@ -41,7 +39,6 @@ extern const PIN_T LAN_CS;
 extern const PIN_T LAN_IRQ;
 extern const PIN_T RUNNING;
 
-
 // gloable method
 void boardPreInit(void);
 void boardInit(void);
@@ -49,15 +46,12 @@ u8 brdCmd(const char* CMD, void (*xprint)(const char* FORMAT_ORG, ...));
 
 void print(const char* FORMAT_ORG, ...);
 void printS(const char* MSG);
-void print485(const char* FORMAT_ORG, ...);
-void printS485(const char* STRING);
 void printSUDP(const char* STRING);
 void printUDP(const char* FORMAT_ORG, ...);
 
-//s8 ioWrite(u16 addr, const u8 *pDat, u16 nBytes);
-//s8 ioRead(u16 addr, u8 *pDat, u16 nBytes);
-s8 ioWriteReg(u16 addr, s32 val);
-s8 ioReadReg(u16 addr, s32 * val);
+s8 ioWrite(u16 addr, const u8 *pDat, u16 nBytes);
+s8 ioRead(u16 addr, u8 *pDat, u16 nBytes);
+
 
 #endif
 

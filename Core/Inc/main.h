@@ -69,22 +69,38 @@ void Error_Handler(void);
 #define EN_5V_GPIO_Port GPIOB
 #define EN_DC_Pin GPIO_PIN_1
 #define EN_DC_GPIO_Port GPIOB
+#define NFLT_Pin GPIO_PIN_2
+#define NFLT_GPIO_Port GPIOB
+#define EN_BAT_Pin GPIO_PIN_8
+#define EN_BAT_GPIO_Port GPIOE
 #define LED2_Pin GPIO_PIN_9
 #define LED2_GPIO_Port GPIOE
 #define PA8_Pin GPIO_PIN_8
 #define PA8_GPIO_Port GPIOA
+#define SCL2_Pin GPIO_PIN_6
+#define SCL2_GPIO_Port GPIOF
+#define SDA2_Pin GPIO_PIN_7
+#define SDA2_GPIO_Port GPIOF
+#define SCL1_Pin GPIO_PIN_15
+#define SCL1_GPIO_Port GPIOA
+#define PC12_Pin GPIO_PIN_12
+#define PC12_GPIO_Port GPIOC
+#define PD2_Pin GPIO_PIN_2
+#define PD2_GPIO_Port GPIOD
 #define EN_VOUT_Pin GPIO_PIN_5
 #define EN_VOUT_GPIO_Port GPIOB
 #define LED3_Pin GPIO_PIN_6
 #define LED3_GPIO_Port GPIOB
+#define SDA1_Pin GPIO_PIN_7
+#define SDA1_GPIO_Port GPIOB
 #define LED1_Pin GPIO_PIN_8
 #define LED1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 extern ADC_HandleTypeDef hadc1;
 
-extern I2C_HandleTypeDef hi2c1;
-extern I2C_HandleTypeDef hi2c2;
+//extern I2C_HandleTypeDef hi2c1;
+//extern I2C_HandleTypeDef hi2c2;
 
 extern SPI_HandleTypeDef hspi1;
 extern SPI_HandleTypeDef hspi2;
@@ -94,8 +110,6 @@ extern TIM_HandleTypeDef htim5;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
-
-extern PCD_HandleTypeDef hpcd_USB_FS;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

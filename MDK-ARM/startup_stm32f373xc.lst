@@ -597,13 +597,13 @@ ARM Macro Assembler    Page 10
               00001000 
               00000200 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=tester_f373\startup_stm32f373xc.d -otester_f373\startup_stm3
-2f373xc.o -I.\RTE\_tester_f373 -IC:\Keil_v5_pack\ARM\CMSIS\5.9.0\CMSIS\Core\Inc
-lude -IC:\Keil_v5_pack\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3
-xx\Include --predefine="__UVISION_VERSION SETA 537" --predefine="_RTE_ SETA 1" 
---predefine="STM32F373xC SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm3
-2f373xc.lst startup_stm32f373xc.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=tester_f373\startup_stm32f373xc.d -otester_f373\startup_stm32f3
+73xc.o -IF:\pprj\max_tester\MDK-ARM\RTE -ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\C
+MSIS\Core\Include -ID:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\
+Device\ST\STM32F3xx\Include --predefine="__UVISION_VERSION SETA 515" --predefin
+e="_RTE_ SETA 1" --predefine="STM32F373xC SETA 1" --list=startup_stm32f373xc.ls
+t startup_stm32f373xc.s
 
 
 

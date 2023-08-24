@@ -3,143 +3,48 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.37.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Administrator, maxeye, LIC=ZC9PA-1TLNF-VKIBQ-LI2JE-T85HB-ITFEA
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Z work, Z, LIC=IK1BF-62ERZ-12WLE-54WVP-ELB2M-G4C9E
  
 Tool Versions:
-Toolchain:       MDK-ARM Essential  Version: 5.37.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 7 (build 960)
-Assembler:       Armasm.exe V5.06 update 7 (build 960)
-Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
-Library Manager: ArmAr.exe V5.06 update 7 (build 960)
-Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
-CPU DLL:         SARMCM3.DLL V5.37.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
-Dialog DLL:      TCM.DLL V1.56.1.0
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.15.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.5.0
  
 <h2>Project:</h2>
-D:\zy\gerrit\0718x\GR5515X\max_tester\MDK-ARM\tester_f373.uvprojx
-Project File Date:  08/09/2023
+F:\pprj\max_tester\MDK-ARM\tester_f373.uvprojx
+Project File Date:  08/23/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'tester_f373'
-compiling board.c...
-..\Core\Src\board\board.h(32): error:  #20: identifier "Rs485Dev_t" is undefined
-  extern Rs485Dev_t rs485;
-..\Core\Src\board\board.h(33): error:  #20: identifier "rampDev_t" is undefined
-  extern rampDev_t stpr[2];
-..\Core\Src\board\board.c(81): error:  #20: identifier "OUT0_GPIO_Port" is undefined
-      {OUT0_GPIO_Port, OUT0_Pin},
-..\Core\Src\board\board.c(81): error:  #20: identifier "OUT0_Pin" is undefined
-      {OUT0_GPIO_Port, OUT0_Pin},
-..\Core\Src\board\board.c(82): error:  #20: identifier "OUT1_GPIO_Port" is undefined
-      {OUT1_GPIO_Port, OUT1_Pin},
-..\Core\Src\board\board.c(82): error:  #20: identifier "OUT1_Pin" is undefined
-      {OUT1_GPIO_Port, OUT1_Pin},
-..\Core\Src\board\board.c(83): error:  #20: identifier "OUT2_GPIO_Port" is undefined
-      {OUT2_GPIO_Port, OUT2_Pin},
-..\Core\Src\board\board.c(83): error:  #20: identifier "OUT2_Pin" is undefined
-      {OUT2_GPIO_Port, OUT2_Pin},
-..\Core\Src\board\board.c(84): error:  #20: identifier "OUT3_GPIO_Port" is undefined
-      {OUT3_GPIO_Port, OUT3_Pin},
-..\Core\Src\board\board.c(84): error:  #20: identifier "OUT3_Pin" is undefined
-      {OUT3_GPIO_Port, OUT3_Pin},
-..\Core\Src\board\board.c(89): error:  #20: identifier "IN0_GPIO_Port" is undefined
-      {IN0_GPIO_Port, IN0_Pin},
-..\Core\Src\board\board.c(89): error:  #20: identifier "IN0_Pin" is undefined
-      {IN0_GPIO_Port, IN0_Pin},
-..\Core\Src\board\board.c(90): error:  #20: identifier "IN1_GPIO_Port" is undefined
-      {IN1_GPIO_Port, IN1_Pin},
-..\Core\Src\board\board.c(90): error:  #20: identifier "IN1_Pin" is undefined
-      {IN1_GPIO_Port, IN1_Pin},
-..\Core\Src\board\board.c(91): error:  #20: identifier "IN2_GPIO_Port" is undefined
-      {IN2_GPIO_Port, IN2_Pin},
-..\Core\Src\board\board.c(91): error:  #20: identifier "IN2_Pin" is undefined
-      {IN2_GPIO_Port, IN2_Pin},
-..\Core\Src\board\board.c(92): error:  #20: identifier "IN3_GPIO_Port" is undefined
-      {IN3_GPIO_Port, IN3_Pin},
-..\Core\Src\board\board.c(92): error:  #20: identifier "IN3_Pin" is undefined
-      {IN3_GPIO_Port, IN3_Pin},
-..\Core\Src\board\board.c(93): error:  #20: identifier "IN4_GPIO_Port" is undefined
-      {IN4_GPIO_Port, IN4_Pin}
-..\Core\Src\board\board.c(93): error:  #20: identifier "IN4_Pin" is undefined
-      {IN4_GPIO_Port, IN4_Pin}
-..\Core\Src\board\board.c(133): warning:  #223-D: function "setupRs485Dev" declared implicitly
-      setupRs485Dev(&rs485, &huart2, rs485TxPool, RX_POOL_LEN, rs485RxPool, RX_POOL_LEN, rs485RxBuf, RX_BUF_LEN, DE, DET,
-..\Core\Src\board\board.c(133): error:  #20: identifier "rs485TxPool" is undefined
-      setupRs485Dev(&rs485, &huart2, rs485TxPool, RX_POOL_LEN, rs485RxPool, RX_POOL_LEN, rs485RxBuf, RX_BUF_LEN, DE, DET,
-..\Core\Src\board\board.c(133): error:  #20: identifier "rs485RxPool" is undefined
-      setupRs485Dev(&rs485, &huart2, rs485TxPool, RX_POOL_LEN, rs485RxPool, RX_POOL_LEN, rs485RxBuf, RX_BUF_LEN, DE, DET,
-..\Core\Src\board\board.c(133): error:  #20: identifier "rs485RxBuf" is undefined
-      setupRs485Dev(&rs485, &huart2, rs485TxPool, RX_POOL_LEN, rs485RxPool, RX_POOL_LEN, rs485RxBuf, RX_BUF_LEN, DE, DET,
-..\Core\Src\board\board.c(133): error:  #20: identifier "DET" is undefined
-      setupRs485Dev(&rs485, &huart2, rs485TxPool, RX_POOL_LEN, rs485RxPool, RX_POOL_LEN, rs485RxBuf, RX_BUF_LEN, DE, DET,
-..\Core\Src\board\board.c(134): error:  #20: identifier "rs485BeforeSend_1" is undefined
-          rs485BeforeSend_1,
-..\Core\Src\board\board.c(135): error:  #20: identifier "rs485AfterSend_1" is undefined
-          rs485AfterSend_1
-..\Core\Src\board\board.c(151): warning:  #223-D: function "rampSetup" declared implicitly
-      rampSetup(
-..\Core\Src\board\board.c(154): error:  #20: identifier "htim3" is undefined
-          &htim3,
-..\Core\Src\board\board.c(156): error:  #20: identifier "M0_DIR" is undefined
-          &M0_DIR,
-..\Core\Src\board\board.c(157): error:  #20: identifier "M0_REFL" is undefined
-          &M0_REFL,
-..\Core\Src\board\board.c(158): error:  #20: identifier "M0_REFR" is undefined
-          &M0_REFR,
-..\Core\Src\board\board.c: 2 warnings, 30 errors
-compiling uartDev.c...
-..\Core\Src\board\board.h(32): error:  #20: identifier "Rs485Dev_t" is undefined
-  extern Rs485Dev_t rs485;
-..\Core\Src\board\board.h(33): error:  #20: identifier "rampDev_t" is undefined
-  extern rampDev_t stpr[2];
-..\..\G0_COMMON\xUartDev\uartDev.c: 0 warnings, 2 errors
-compiling task.c...
-..\Core\Src\board\board.h(32): error:  #20: identifier "Rs485Dev_t" is undefined
-  extern Rs485Dev_t rs485;
-..\Core\Src\board\board.h(33): error:  #20: identifier "rampDev_t" is undefined
-  extern rampDev_t stpr[2];
-..\Core\Src\task\task.c(124): warning:  #177-D: function "forwardRes"  was declared but never referenced
-  static void forwardRes(void* rsrc, const char* MSG){
-..\Core\Src\task\task.c(131): warning:  #177-D: function "forwardReq"  was declared but never referenced
-  static void forwardReq(const char* MSG){
-..\Core\Src\task\task.c(84): warning:  #177-D: function "doCommand"  was declared but never referenced
-  u8 doCommand(char* buff, u16 len,
-..\Core\Src\task\task.c: 3 warnings, 2 errors
-compiling stm32f3xx_it.c...
-compiling main.c...
-compiling stm32f3xx_hal_msp.c...
-"tester_f373\tester_f373.axf" - 34 Error(s), 5 Warning(s).
+"tester_f373\tester_f373.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
-                CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.6.0
-
-Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.2.2.pack
-                Keil.STM32F3xx_DFP.2.2.2
-                STMicroelectronics STM32F3 Series Device Support and Examples
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM::CMSIS:CORE:5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
 
 <h2>Collection of Component include folders:</h2>
-  ./RTE/_tester_f373
-  C:/Keil_v5_pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  C:/Keil_v5_pack/Keil/STM32F3xx_DFP/2.2.2/Drivers/CMSIS/Device/ST/STM32F3xx/Include
+  F:\pprj\max_tester\MDK-ARM\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
-      Include file:  CMSIS/Core/Include/tz_context.h
-Target not created.
-Build Time Elapsed:  00:00:02
+   * Component: ARM::CMSIS:CORE:5.3.0
 </pre>
 </body>
 </html>
