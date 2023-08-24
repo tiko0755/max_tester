@@ -43,8 +43,16 @@ tester_f373\led_flash.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.
 tester_f373\led_flash.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 tester_f373\led_flash.o: ../../G0_COMMON/app_timer/app_timer.h
 tester_f373\led_flash.o: ../../G0_COMMON/xMisc/usr_typedef.h
+<<<<<<< HEAD
 tester_f373\led_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 tester_f373\led_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 tester_f373\led_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 tester_f373\led_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 tester_f373\led_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+=======
+tester_f373\led_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+tester_f373\led_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+tester_f373\led_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+tester_f373\led_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+tester_f373\led_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986

@@ -44,9 +44,15 @@ tester_f373\uartdev.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex
 tester_f373\uartdev.o: ../../G0_COMMON/xRingBuffer/ring_buffer.h
 tester_f373\uartdev.o: ../../G0_COMMON/app_timer/app_timer.h
 tester_f373\uartdev.o: ../../G0_COMMON/xMisc/usr_typedef.h
+<<<<<<< HEAD
 tester_f373\uartdev.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 tester_f373\uartdev.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 tester_f373\uartdev.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+=======
+tester_f373\uartdev.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+tester_f373\uartdev.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+tester_f373\uartdev.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 tester_f373\uartdev.o: ../../G0_COMMON/xCRC16/crc16.h
 tester_f373\uartdev.o: ../Core/Src/board/board.h
 tester_f373\uartdev.o: ../../G0_COMMON/cmd_consumer/cmd_consumer.h

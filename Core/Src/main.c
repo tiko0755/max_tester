@@ -44,6 +44,11 @@
 ADC_HandleTypeDef hadc1;
 
 CRC_HandleTypeDef hcrc;
+<<<<<<< HEAD
+=======
+
+I2C_HandleTypeDef hi2c1;
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 
 SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef hspi2;
@@ -62,6 +67,10 @@ UART_HandleTypeDef huart3;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
+<<<<<<< HEAD
+=======
+static void MX_I2C1_Init(void);
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 static void MX_SPI1_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_TIM5_Init(void);
@@ -107,6 +116,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC1_Init();
+<<<<<<< HEAD
+=======
+  MX_I2C1_Init();
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   MX_SPI1_Init();
   MX_SPI2_Init();
   MX_TIM5_Init();
@@ -169,10 +182,19 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_USART2
+<<<<<<< HEAD
                               |RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_ADC1;
   PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
   PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
   PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
+=======
+                              |RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_I2C1
+                              |RCC_PERIPHCLK_ADC1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
+  PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
+  PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_HSI;
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   PeriphClkInit.Adc1ClockSelection = RCC_ADC1PCLK2_DIV2;
 
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
@@ -219,12 +241,118 @@ static void MX_ADC1_Init(void)
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
+<<<<<<< HEAD
+=======
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Rank = ADC_REGULAR_RANK_2;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_2;
+  sConfig.Rank = ADC_REGULAR_RANK_3;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_3;
+  sConfig.Rank = ADC_REGULAR_RANK_4;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_4;
+  sConfig.Rank = ADC_REGULAR_RANK_5;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_5;
+  sConfig.Rank = ADC_REGULAR_RANK_6;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_6;
+  sConfig.Rank = ADC_REGULAR_RANK_7;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_7;
+  sConfig.Rank = ADC_REGULAR_RANK_8;
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+<<<<<<< HEAD
+  /** Configure Regular Channel
+=======
+}
+
+/**
+  * @brief CRC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_CRC_Init(void)
+{
+
+  /* USER CODE BEGIN CRC_Init 0 */
+
+  /* USER CODE END CRC_Init 0 */
+
+  /* USER CODE BEGIN CRC_Init 1 */
+
+  /* USER CODE END CRC_Init 1 */
+  hcrc.Instance = CRC;
+  hcrc.Init.DefaultPolynomialUse = DEFAULT_POLYNOMIAL_ENABLE;
+  hcrc.Init.DefaultInitValueUse = DEFAULT_INIT_VALUE_ENABLE;
+  hcrc.Init.InputDataInversionMode = CRC_INPUTDATA_INVERSION_NONE;
+  hcrc.Init.OutputDataInversionMode = CRC_OUTPUTDATA_INVERSION_DISABLE;
+  hcrc.InputDataFormat = CRC_INPUTDATA_FORMAT_BYTES;
+  if (HAL_CRC_Init(&hcrc) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN CRC_Init 2 */
+
+  /* USER CODE END CRC_Init 2 */
+
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   */
   sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = ADC_REGULAR_RANK_2;
@@ -293,6 +421,7 @@ static void MX_ADC1_Init(void)
 }
 
 /**
+<<<<<<< HEAD
   * @brief CRC Initialization Function
   * @param None
   * @retval None
@@ -324,6 +453,8 @@ static void MX_CRC_Init(void)
 }
 
 /**
+=======
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   * @brief SPI1 Initialization Function
   * @param None
   * @retval None
@@ -599,10 +730,14 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOE, EN_BAT_Pin|LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
+<<<<<<< HEAD
   HAL_GPIO_WritePin(GPIOF, SCL2_Pin|SDA2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SCL1_GPIO_Port, SCL1_Pin, GPIO_PIN_RESET);
+=======
+  HAL_GPIO_WritePin(GPIOF, I2C2_SCL_Pin|I2C2_SDA_Pin, GPIO_PIN_RESET);
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 
   /*Configure GPIO pin : BEEP_Pin */
   GPIO_InitStruct.Pin = BEEP_Pin;
@@ -645,13 +780,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(PA8_GPIO_Port, &GPIO_InitStruct);
 
+<<<<<<< HEAD
   /*Configure GPIO pins : SCL2_Pin SDA2_Pin */
   GPIO_InitStruct.Pin = SCL2_Pin|SDA2_Pin;
+=======
+  /*Configure GPIO pins : I2C2_SCL_Pin I2C2_SDA_Pin */
+  GPIO_InitStruct.Pin = I2C2_SCL_Pin|I2C2_SDA_Pin;
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
+<<<<<<< HEAD
   /*Configure GPIO pin : SCL1_Pin */
   GPIO_InitStruct.Pin = SCL1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -659,6 +800,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(SCL1_GPIO_Port, &GPIO_InitStruct);
 
+=======
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
   /*Configure GPIO pin : PD2_Pin */
   GPIO_InitStruct.Pin = PD2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;

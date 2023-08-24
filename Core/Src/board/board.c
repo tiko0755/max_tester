@@ -107,6 +107,7 @@ static void forwardToBus(u8* BUFF, u16 len);
 
 
 // IIC DEV
+<<<<<<< HEAD
 cw2217_dev_t cw2217[2] = {0};
 IIC_IO_Dev_T iicDev1;
 const PIN_T SDA1 = {SDA1_GPIO_Port, SDA1_Pin};
@@ -115,6 +116,14 @@ const PIN_T SCL1 = {SCL1_GPIO_Port, SCL1_Pin};
 IIC_IO_Dev_T iicDev2;
 const PIN_T SDA2 = {SDA2_GPIO_Port, SDA2_Pin};
 const PIN_T SCL2 = {SCL2_GPIO_Port, SCL2_Pin};
+=======
+cw2217_dev_t cw2217;
+IIC_IO_Dev_T iicDev2;
+const PIN_T SDA2 = {GPIOF, GPIO_PIN_7};
+const PIN_T SCL2 = {GPIOF, GPIO_PIN_6};
+
+
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 
 
 /* Private function prototypes -----------------------------------------------*/
@@ -131,8 +140,11 @@ void boardInit(void){
     s32 tmrIndx;
 
     HAL_GPIO_WritePin(RUNNING.GPIOx, RUNNING.GPIO_Pin, GPIO_PIN_SET);
+<<<<<<< HEAD
     // 
     
+=======
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
     
     // setup app timers
     for(tmrIndx=0;tmrIndx<APP_TIMER_COUNT;tmrIndx++){
@@ -148,11 +160,16 @@ void boardInit(void){
 
     logInitial(printS);
     
+<<<<<<< HEAD
     IIC_IO_Setup(&iicDev1, &SCL1, &SDA1);
     cw2217_setup(&cw2217[0], &iicDev1);
     
     IIC_IO_Setup(&iicDev2, &SCL2, &SDA2);
     cw2217_setup(&cw2217[1], &iicDev2);
+=======
+    IIC_IO_Setup(&iicDev2, &SCL2, &SDA2);
+    cw2217_setup(&cw2217, &iicDev2);
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
     
     printS("setup adc...");
     ADC_Setup(&adcD, &hadc1, &tmr[tmrIndx++], NULL, NULL, 0);
@@ -194,6 +211,7 @@ void boardInit(void){
     tmrIndx++;
 
 
+<<<<<<< HEAD
     
     HAL_GPIO_WritePin(VOUT_EN0.GPIOx, VOUT_EN0.GPIO_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(VOUT_EN1.GPIOx, VOUT_EN1.GPIO_Pin, GPIO_PIN_SET);
@@ -201,12 +219,15 @@ void boardInit(void){
     
     
     
+=======
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
     g_initalDone = 1;
 
 //    print("flashSize: 0x%08x\n", *(u32*)FLASH_SIZE_DATA_REGISTER);
     
     print("%d timers have been used", tmrIndx);
     printS("initial complete, type \"help\" for help\n");
+<<<<<<< HEAD
 }
 
 static u8 testSqu = 0, adcIndx = 0;
@@ -230,6 +251,30 @@ static void testHandler(void* e){
 
 }
 
+=======
+}
+
+static u8 testSqu = 0, adcIndx = 0;
+static u32 testTick =0;
+static u16 adcVal[8][4];
+#define LOOP_TIM (300)
+static void testHandler(void* e){
+//    printS("adc:");
+//    print("%d ", adcD.rsrc.adcSeries[0][0]);
+//    print("%d ", adcD.rsrc.adcSeries[1][0]);
+//    print("%d ", adcD.rsrc.adcSeries[2][0]);
+//    print("%d ", adcD.rsrc.adcSeries[3][0]);
+//    print("%d ", adcD.rsrc.adcSeries[4][0]);
+//    print("%d ", adcD.rsrc.adcSeries[5][0]);
+//    print("%d ", adcD.rsrc.adcSeries[6][0]);
+//    print("%d ", adcD.rsrc.adcSeries[7][0]);
+//    printS("\n");
+    
+    
+
+}
+
+>>>>>>> b016ac5b4b5111c44bb4d4d95b5c861d95950986
 
 void printS(const char* STRING){
     console.Send(&console.rsrc, (const u8*)STRING, strlen(STRING));
