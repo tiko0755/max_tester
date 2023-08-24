@@ -1,0 +1,965 @@
+
+[16:04:52.986]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:0 instant:0 evtinc:0
+
+[16:04:53.287]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:04:54.374]ÊÕ¡û¡ôparam updated evtcnt:171 instant:172 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:04:54.786]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:04:54.876]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:04:54.906]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:04:54.936]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:04:54.966]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:04:57.142]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:04:57.411]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:04:58.761]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:04:58.851]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:05:02.264]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:05.226]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:07.401]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:05:15.412]ÊÕ¡û¡ôparam updated evtcnt:1573 instant:1574 evtinc:1 effect evtcnt:172 instant:172 evtinc:1
+
+[16:05:30.106]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:05:30.482]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:30.731]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:31.356]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:05:31.983]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:05:34.107]ÊÕ¡û¡ôparam updated evtcnt:1723 instant:1724 evtinc:1 effect evtcnt:1574 instant:1574 evtinc:1
+
+[16:05:34.821]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:39.397]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:1724 instant:1724 evtinc:1
+
+[16:05:39.711]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:05:40.665]ÊÕ¡û¡ôparam updated evtcnt:151 instant:152 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:05:41.166]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:05:41.196]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:05:41.241]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:05:41.377]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:05:48.142]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:05:48.756]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:48.801]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:49.371]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:05:49.896]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:05:57.111]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:05:57.772]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:05:58.672]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:05:59.196]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:01.671]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:02.317]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:02.528]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:03.097]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:03.621]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:06.187]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:06.877]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:08.032]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:08.512]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:09.434]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:09.742]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:09.862]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:10.732]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:11.183]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:20.527]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:21.157]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:21.924]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:22.327]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:33.952]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:34.628]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:34.792]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:35.378]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:35.857]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:40.222]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:40.868]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:41.077]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:41.392]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:41.918]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:46.956]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:47.258]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:48.022]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0
+[16:06:48.043]ÊÕ¡û¡ôx00 
+
+[16:06:48.399]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:06:54.368]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:06:54.667]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:54.879]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:06:55.703]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:06:56.003]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:07:15.668]ÊÕ¡û¡ôparam updated evtcnt:6484 instant:6485 evtinc:1 effect evtcnt:152 instant:152 evtinc:1
+
+[16:07:37.370]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:07:37.608]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:07:38.233]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:07:40.484]ÊÕ¡û¡ôparam updated evtcnt:6683 instant:6684 evtinc:1 effect evtcnt:6485 instant:6485 evtinc:1
+
+[16:08:24.466]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:6684 instant:6684 evtinc:1
+
+[16:08:24.848]ÊÕ¡û¡ôparam updated evtcnt:31 instant:31 evtinc:1 effect evtcnt:31 instant:31 evtinc:1
+
+[16:08:48.794]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:73 instant:31 evtinc:1
+
+[16:08:49.661]ÊÕ¡û¡ôparam updated evtcnt:119 instant:120 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:08:53.367]ÊÕ¡û¡ôAPP_E: (..\Src\user\user_app.c maxeye_ble_adv_start Line:338) Error code 0x000F: Operation is disallowed.
+
+[16:08:55.181]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:120 instant:120 evtinc:1
+
+[16:08:56.006]ÊÕ¡û¡ôparam updated evtcnt:114 instant:115 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:08:58.241]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+
+[16:08:58.362]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:08:58.391]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+write srvc:0x2c 0x38 0x01 0x01 
+
+[16:08:58.902]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:09:02.666]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:09:03.311]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:03.536]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:04.150]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:10.976]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:115 instant:115 evtinc:1
+
+[16:09:11.277]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:09:12.334]ÊÕ¡û¡ôparam updated evtcnt:167 instant:168 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:09:12.821]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:09:12.911]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:09:12.956]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:09:12.986]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:09:13.016]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:09:13.061]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:09:15.641]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:09:16.286]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:16.481]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:16.602]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:23.895]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:168 instant:168 evtinc:1
+
+[16:09:24.221]ÊÕ¡û¡ôparam updated evtcnt:30 instant:31 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:09:25.362]ÊÕ¡û¡ôparam updated evtcnt:180 instant:181 evtinc:1 effect evtcnt:31 instant:31 evtinc:1
+
+[16:09:25.856]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:09:25.887]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:09:25.947]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:09:25.991]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:09:26.081]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:09:26.152]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:09:29.727]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:09:30.401]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:30.582]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:30.882]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:09:45.345]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:181 instant:181 evtinc:1
+
+[16:09:45.657]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:09:46.819]ÊÕ¡û¡ôparam updated evtcnt:182 instant:183 evtinc:1 effect evtcnt:30 instant:30 evtinc:1
+
+[16:09:47.321]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:09:47.366]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:09:47.412]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:09:47.456]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:09:47.516]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:09:47.576]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:09:47.637]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:09:50.114]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:09:51.701]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:09:58.508]ÊÕ¡û¡ôparam updated evtcnt:9 instant:10 evtinc:1 effect evtcnt:183 instant:183 evtinc:1
+
+[16:09:58.827]ÊÕ¡û¡ôparam updated evtcnt:27 instant:28 evtinc:1 effect evtcnt:10 instant:10 evtinc:1
+
+[16:09:59.936]ÊÕ¡û¡ôparam updated evtcnt:173 instant:174 evtinc:1 effect evtcnt:28 instant:28 evtinc:1
+
+[16:10:00.401]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:10:00.431]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:10:00.491]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:10:00.551]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:10:00.611]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:10:00.657]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:10:12.061]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:174 instant:174 evtinc:1
+
+[16:10:12.387]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:10:13.387]ÊÕ¡û¡ôparam updated evtcnt:160 instant:161 evtinc:1 effect evtcnt:30 instant:30 evtinc:1
+
+[16:10:13.797]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:10:13.841]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:10:13.887]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:10:13.931]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:10:13.962]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:10:14.036]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:10:14.502]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0
+[16:10:14.524]ÊÕ¡û¡ôx01 
+
+[16:10:20.112]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:26:24.692]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:26:25.066]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:26:26.941]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:26:27.692]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:26:29.816]ÊÕ¡û¡ôparam updated evtcnt:1839 instant:1840 evtinc:1 effect evtcnt:1020 instant:1020 evtinc:1
+
+[16:26:49.684]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:1840 instant:1840 evtinc:1
+
+[16:26:50.811]ÊÕ¡û¡ôparam updated evtcnt:134 instant:135 evtinc:1 effect evtcnt:26 instant:26 evtinc:1
+
+[16:26:51.176]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:26:51.206]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:26:51.236]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:26:51.266]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:26:51.296]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:26:51.327]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:26:51.371]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:26:57.581]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:135 instant:135 evtinc:1
+
+[16:26:57.897]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:26:58.857]ÊÕ¡û¡ôparam updated evtcnt:154 instant:155 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:26:59.262]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:26:59.292]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:26:59.336]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:26:59.381]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:26:59.412]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:26:59.442]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:26:59.486]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:27:14.059]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:155 instant:155 evtinc:1
+
+[16:27:14.367]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:27:15.425]ÊÕ¡û¡ôparam updated evtcnt:167 instant:168 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:27:15.882]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:27:15.912]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:27:15.956]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:27:16.001]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:27:16.032]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:27:16.062]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:27:16.107]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:27:25.857]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:168 instant:168 evtinc:1
+
+[16:27:26.172]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:27:27.510]ÊÕ¡û¡ôparam updated evtcnt:204 instant:205 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:27:27.927]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:27:27.957]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:27:28.016]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:27:28.062]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:27:28.092]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:27:28.137]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:27:28.167]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:27:28.587]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:27:34.888]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:27:36.942]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:27:47.562]ÊÕ¡û¡ôparam updated evtcnt:1541 instant:1542 evtinc:1 effect evtcnt:205 instant:205 evtinc:1
+
+[16:28:44.190]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:28:44.441]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:28:48.065]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:28:51.066]ÊÕ¡û¡ôparam updated evtcnt:2049 instant:2050 evtinc:1 effect evtcnt:1542 instant:1542 evtinc:1
+
+[16:29:39.675]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:2050 instant:2050 evtinc:1
+
+[16:29:40.000]ÊÕ¡û¡ôparam updated evtcnt:30 instant:31 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:29:40.960]ÊÕ¡û¡ôparam updated evtcnt:156 instant:157 evtinc:1 effect evtcnt:31 instant:31 evtinc:1
+
+[16:29:41.425]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:29:41.455]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:29:41.515]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:29:41.560]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:29:41.620]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:29:41.650]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:29:41.695]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:29:55.049]ÊÕ¡û¡ôparam updated evtcnt:18 instant:19 evtinc:1 effect evtcnt:157 instant:157 evtinc:1
+
+[16:29:55.881]ÊÕ¡û¡ôparam updated evtcnt:124 instant:125 evtinc:1 effect evtcnt:19 instant:19 evtinc:1
+
+[16:30:49.062]ÊÕ¡û¡ôboot ver:0.6
+APP_D: copy addr      = 0x01080000
+APP_D: There is incomplete DFU copy task.
+
+[16:30:49.117]ÊÕ¡û¡ôAPP_D: Signature verify check success.
+APP_D: DFU FW image start copy.
+
+[16:30:51.154]ÊÕ¡û¡ôAPP_D: Update user image info.
+
+[16:30:52.528]ÊÕ¡û¡ôboot ver:0.6
+
+[16:30:52.582]ÊÕ¡û¡ôAPP_D: Signature verify check success.
+APP_D: check APP img valid.
+APP_D: Jump to APP FW.
+
+[16:30:52.898]ÊÕ¡û¡ôLocal Mac: F8 6F DE 11 6C 74
+
+[16:30:56.248]ÊÕ¡û¡ômcu upgrade ok
+
+[16:30:59.916]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:0 instant:0 evtinc:0
+
+[16:31:00.354]ÊÕ¡û¡ôparam updated evtcnt:37 instant:38 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:31:01.644]ÊÕ¡û¡ôparam updated evtcnt:207 instant
+[16:31:01.693]ÊÕ¡û¡ô:208 evtinc:1 effect evtcnt:38 instant:38 evtinc:1
+
+[16:31:02.349]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:31:02.394]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:31:02.470]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:31:02.560]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:31:02.590]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:31:02.634]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:31:02.680]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:31:22.045]ÊÕ¡û¡ôparam updated evtcnt:1567 instant:1568 evtinc:1 effect evtcnt:208 instant:208 evtinc:1
+
+[16:31:24.864]ÊÕ¡û¡ôwrite srvc:0x2c 0x39 0x01 0x01 
+
+[16:31:25.315]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:31:56.053]ÊÕ¡û¡ôparam updated evtcnt:18 instant:19 evtinc:1 effect evtcnt:200 instant:200 evtinc:1
+
+[16:31:56.774]ÊÕ¡û¡ôparam updated evtcnt:109 instant:110 evtinc:1 effect evtcnt:19 instant:19 evtinc:1
+
+[16:32:35.052]ÊÕ¡û¡ôboot ver:0.6
+APP_D: copy addr      = 0x01080000
+APP_D: There is incomplete DFU copy task.
+
+[16:32:35.109]ÊÕ¡û¡ôAPP_D: Signature verify check success.
+APP_D: DFU FW image start copy.
+
+[16:32:37.135]ÊÕ¡û¡ôAPP_D: Update user image info.
+
+[16:32:38.512]ÊÕ¡û¡ôboot ver:0.6
+
+[16:32:38.563]ÊÕ¡û¡ôAPP_D: Signature verify check success.
+APP_D: check APP img valid.
+APP_D: Jump to APP FW.
+
+[16:32:38.880]ÊÕ¡û¡ôLocal Mac: F8 6F DE 11 6C 74
+
+[16:32:42.228]ÊÕ¡û¡ômcu upgrade ok
+
+[16:32:53.162]ÊÕ¡û¡ôparam updated evtcnt:12 instant:13 evtinc:1 effect evtcnt:0 instant:0 evtinc:0
+
+[16:32:53.454]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:13 instant:13 evtinc:1
+
+[16:32:54.276]ÊÕ¡û¡ôparam updated evtcnt:136 instant:137 evtinc:1 effect evtcnt:30 instant:30 evtinc:1
+
+[16:32:54.670]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:32:54.715]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:32:54.775]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:32:54.849]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:32:54.895]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:33:01.938]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:137 instant:137 evtinc:1
+
+[16:33:02.245]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:33:03.663]ÊÕ¡û¡ôparam updated evtcnt:215 instant:216 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:33:03.759]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:33:03.804]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:33:03.849]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:33:03.895]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:33:03.939]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:33:04.031]ÊÕ¡û¡ô 0x01 
+
+[16:33:11.639]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:216 instant:216 evtinc:1
+
+[16:33:11.951]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:33:13.015]ÊÕ¡û¡ôparam updated evtcnt:166 instant:167 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:33:13.479]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:33:13.525]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:33:13.600]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+write srvc:0x2c 0x38 0x01 0x01 
+
+[16:33:21.194]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:167 instant:167 evtinc:1
+
+[16:33:21.520]ÊÕ¡û¡ôparam updated evtcnt:30 instant:31 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:33:23.005]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2param updated evtcnt:230 instant:231 evtinc:1 effect evtcnt:31 instant:31 evtinc:1
+c 0x08 0x01 0x01 
+
+[16:33:23.095]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:33:23.125]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:33:23.231]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:33:23.275]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:33:23.320]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:33:28.849]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:231 instant:231 evtinc:1
+
+[16:33:30.349]ÊÕ¡û¡ôparam updated evtcnt:183 instant:184 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:33:30.790]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:33:30.880]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:33:30.925]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:33:31.000]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:33:31.046]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:33:41.381]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:13 ins
+[16:33:41.401]ÊÕ¡û¡ôtant:13 evtinc:1
+
+[16:33:48.543]ÊÕ¡û¡ôparam updated evtcnt:13 instant:14 evtinc:1 effect evtcnt:173 instant:173 evtinc:1
+
+[16:33:49.016]ÊÕ¡û¡ôparam updated evtcnt:42 instant:43 evtinc:1 effect evtcnt:14 instant:14 evtinc:1
+
+[16:33:59.316]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:250 instant:250 evtinc:1
+
+[16:33:59.636]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:34:00.956]ÊÕ¡û¡ôÿrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:34:01.001]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:34:01.045]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:34:06.873]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:140 instant:140 evtinc:1
+
+[16:34:07.181]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:34:08.261]ÊÕ¡û¡ôparam updated evtcnt:171 instant:172 evtinc:1 effect evtcnt:30 instant:30 evtinc:1
+
+[16:34:15.210]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:172 instant:172 evtinc:1
+
+[16:34:15.521]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:34:16.647]ÊÕ¡û¡ôparam updated evtcnt:177 instant:178 evtinc:1 effect evtcnt:30 instant:30 evtinc:1
+
+[16:34:17.096]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:34:17.186]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:34:17.231]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:34:17.276]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:34:17.366]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:34:25.399]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:178 instant:178 evtinc:1
+
+[16:34:25.706]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:34:26.759]ÊÕ¡û¡ôparam updated evtcnt:164 instant:165 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:34:27.192]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:34:27.282]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:34:27.326]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:34:27.372]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:34:27.417]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:34:27.461]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:34:32.907]ÊÕ¡û¡ôparam updated evtcnt:9 instant:10 evtinc:1 effect evtcnt:165 instant:165 evtinc:1
+
+[16:34:33.207]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:10 instant:10 evtinc:1
+
+[16:34:34.361]ÊÕ¡û¡ôparam updated evtcnt:178 instant:179 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:34:34.826]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:34:34.871]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:34:35.036]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:34:35.081]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:34:35.126]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:34:41.243]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:179 instant:179 evtinc:1
+
+[16:34:41.562]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:34:42.672]ÊÕ¡û¡ôparam updated evtcnt:174 instant:175 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:34:43.107]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:34:43.137]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:34:43.196]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:34:43.347]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:36:01.631]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:171 instant:171 evtinc:1
+
+[16:36:01.961]ÊÕ¡û¡ôparam updated evtcnt:27 instant:28 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:36:03.027]ÊÕ¡û¡ôparam updated evtcnt:167 instant:168 evtinc:1 effect evtcnt:28 instant:28 evtinc:1
+
+[16:36:03.537]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:36:03.572]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:36:03.626]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:36:03.687]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:36:03.732]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:36:03.777]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:36:03.821]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:36:26.300]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:150 instant:150 evtinc:1
+
+[16:36:26.592]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:36:27.733]ÊÕ¡û¡ôparam updated evtcnt:178 instant:179 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:36:28.182]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:36:28.211]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:36:28.286]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:36:28.332]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:36:28.362]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:36:28.407]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:36:36.358]ÊÕ¡û¡ôparam updated evtcnt:28 instant:29 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:36:37.423]ÊÕ¡û¡ôparam updated evtcnt:168 instant:169 evtinc:1 effect evtcnt:29 instant:29 evtinc:1
+
+[16:36:37.917]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:36:37.962]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:36:38.006]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:36:38.052]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:36:38.097]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:36:38.157]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:36:38.202]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:36:46.921]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:169 instant:169 evtinc:1
+
+[16:36:47.398]ÊÕ¡û¡ôparam updated evtcnt:40 instant:41 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:36:48.433]ÊÕ¡û¡ôparam updated evtcnt:176 instant:177 evtinc:1 effect evtcnt:41 instant:41 evtinc:1
+
+[16:36:48.882]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:36:48.972]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+
+[16:36:49.032]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:36:49.062]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:36:49.092]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:37:00.477]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:37:00.612]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:37:07.348]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:163 instant:163 evtinc:1
+
+[16:37:07.647]ÊÕ¡û¡ôparam updated evtcnt:25 instant:26 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:37:08.757]ÊÕ¡û¡ôparam updated evtcnt:171 instant:172 evtinc:1 effect evtcnt:26 instant:26 evtinc:1
+
+[16:37:09.177]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:37:09.269]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:37:09.327]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:37:09.357]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:37:09.387]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:37:09.418]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:37:16.659]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:172 instant:172 evtinc:1
+
+[16:37:16.978]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:37:18.051]ÊÕ¡û¡ôparam updated evtcnt:167 instant:168 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:37:18.433]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:37:18.462]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:37:18.523]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:37:18.612]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:37:18.658]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:37:27.141]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:168 instant:168 evtinc:1
+
+[16:37:27.449]ÊÕ¡û¡ôparam updated evtcnt:29 instant:30 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:37:34.941]ÊÕ¡û¡ôparam updated evtcnt:11 instant:12 evtinc:1 effect evtcnt:144 instant:144 evtinc:1
+
+[16:37:35.264]ÊÕ¡û¡ôparam updated evtcnt:30 instant:31 evtinc:1 effect evtcnt:12 instant:12 evtinc:1
+
+[16:37:36.381]ÊÕ¡û¡ôparam updated evtcnt:177 instant:178 evtinc:1 effect evtcnt:31 instant:31 evtinc:1
+
+[16:37:36.899]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:37:36.987]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:37:37.033]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:37:37.094]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+write srvc:0x2c 0x38 0x01 0x01 
+
+[16:37:43.765]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:178 instant:178 evtinc:1
+
+[16:37:44.083]ÊÕ¡û¡ôparam updated evtcnt:26 instant:
+[16:37:44.102]ÊÕ¡û¡ô27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:37:45.674]ÊÕ¡û¡ô
+[16:37:53.417]ÊÕ¡û¡ôÿparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:171 instant:171 evtinc:1
+
+[16:37:53.729]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:37:54.729]ÊÕ¡û¡ôparam updated evtcnt:157 instant:158 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:37:55.138]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:37:55.168]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:37:55.228]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+
+[16:37:55.319]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:37:55.393]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:38:01.169]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:158 instant:158 evtinc:1
+
+[16:38:01.484]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:38:02.534]ÊÕ¡û¡ôparam updated evtcnt:164 instant:165 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:38:02.969]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:38:03.014]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:38:03.059]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:38:03.104]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:38:03.149]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:38:03.224]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:38:11.211]ÊÕ¡û¡ôparam updated evtcnt:10 instant:11 evtinc:1 effect evtcnt:165 instant:165 evtinc:1
+
+[16:38:11.503]ÊÕ¡û¡ôparam updated evtcnt:27 instant:28 evtinc:1 effect evtcnt:11 instant:11 evtinc:1
+
+[16:38:12.482]ÊÕ¡û¡ôparam updated evtcnt:155 instant:156 evtinc:1 effect evtcnt:28 instant:28 evtinc:1
+
+[16:38:12.884]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+
+[16:38:12.959]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+write srvc:0x2c 0x26 0x01 0x0b 
+
+[16:38:13.334]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:38:13.379]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:38:13.708]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:38:21.741]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:156 instant:156 evtinc:1
+
+[16:38:22.050]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:38:22.934]ÊÕ¡û¡ôparam updated evtcnt:142 instant:143 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:38:23.357]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:38:23.399]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:38:23.474]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+write srvc:0x2c 0x53 0x01 0x11 
+
+[16:38:23.595]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:38:30.127]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:143 instant:143 evtinc:1
+
+[16:38:30.434]ÊÕ¡û¡ôparam updated evtcnt:26 instant:27 evtinc:1 effect evtcnt:9 instant:9 evtinc:1
+
+[16:38:31.506]ÊÕ¡û¡ôparam updated evtcnt:167 instant:168 evtinc:1 effect evtcnt:27 instant:27 evtinc:1
+
+[16:38:31.949]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+
+[16:38:31.979]ÊÕ¡û¡ôwrite srvc:0x2c 0x08 0x01 0x01 
+
+[16:38:32.024]ÊÕ¡û¡ôwrite srvc:0x2c 0x06 0x01 0x05 
+
+[16:38:32.069]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+write srvc:0x2c 0x25 0x01 0x03 
+
+[16:38:32.144]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:38:32.174]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:38:38.755]ÊÕ¡û¡ôparam updated evtcnt:8 instant:9 evtinc:1 effect evtcnt:168 instant:168 evtinc:1
+
+[16:39:17.858]ÊÕ¡û¡ôparam updated evtcnt:18 instant:19 evtinc:1 effect evtcnt:39 instant:27 evtinc:1
+
+[16:39:18.295]ÊÕ¡û¡ôwrite srvc:0x2c 0x01 0x01 0x01 
+write srvc:0x2c 0x08 0x01 0x01 
+write srvc:0x2c 0x06 0x01 0x05 
+
+[16:39:18.393]ÊÕ¡û¡ôwrite srvc:0x2c 0x26 0x01 0x0b 
+
+[16:39:18.423]ÊÕ¡û¡ôwrite srvc:0x2c 0x25 0x01 0x03 
+
+[16:39:18.453]ÊÕ¡û¡ôwrite srvc:0x2c 0x53 0x01 0x11 
+
+[16:39:18.483]ÊÕ¡û¡ôwrite srvc:0x2c 0x38 0x01 0x01 
+
+[16:39:18.933]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:39:20.238]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:39:30.963]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x01 
+
+[16:39:37.054]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0
+[16:39:37.073]ÊÕ¡û¡ôx01 
+
+[16:39:40.023]ÊÕ¡û¡ôwrite srvc:0x2c 0x90 0x01 0x01 0x00 
+
+[16:40:30.664]ÊÕ¡û¡ôparam updated evtcnt:4869 instant:4870 evtinc:1 effect evtcnt:19 instant:19 evtinc:1

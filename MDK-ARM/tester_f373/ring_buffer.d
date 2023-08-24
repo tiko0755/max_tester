@@ -1,8 +1,8 @@
 tester_f373\ring_buffer.o: ..\..\G0_COMMON\xRingBuffer\ring_buffer.c
 tester_f373\ring_buffer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 tester_f373\ring_buffer.o: ..\..\G0_COMMON\xRingBuffer\ring_buffer.h
-tester_f373\ring_buffer.o: ..\..\G0_COMMON\xMisc\misc.h
-tester_f373\ring_buffer.o: ..\Core\Src\board\config.h
+tester_f373\ring_buffer.o: ../../G0_COMMON/xMisc/misc.h
+tester_f373\ring_buffer.o: ../Core/Src/board/config.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h
 tester_f373\ring_buffer.o: ../Core/Inc/stm32f3xx_hal_conf.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h
@@ -28,13 +28,12 @@ tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h
+tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc.h
+tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc_ex.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h
-tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h
-tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usb.h
-tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
 tester_f373\ring_buffer.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h

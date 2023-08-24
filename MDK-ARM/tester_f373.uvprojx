@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32F373RCTx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F3xx_DFP.2.2.2</PackID>
+          <PackID>Keil.STM32F3xx_DFP.2.2.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x20007FFF) IROM(0x8000000-0x803FFFF) CLOCK(72000000) FPU2 CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -186,7 +186,6 @@
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
-            <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -340,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F373xC</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Drivers/CMSIS/Include;..\Core\Src\board;..\Core\Src\task;..\..\G0_COMMON\app_timer;..\..\G0_COMMON\cmd_consumer;..\..\G0_COMMON\xUartDev;..\..\G0_COMMON\xRingBuffer;..\..\G0_COMMON\gpio_input;..\..\G0_COMMON\gpio_output;..\..\G0_COMMON\xIIC_IO;..\..\G0_COMMON\xCRC16;..\..\G0_COMMON\xMisc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Drivers/CMSIS/Include;../Core/Src/board;../Core/Src/task;../../G0_COMMON/app_timer;../../G0_COMMON/cmd_consumer;../../G0_COMMON/xUartDev;../../G0_COMMON/xRingBuffer;../../G0_COMMON/gpio_input;../../G0_COMMON/gpio_output;../../G0_COMMON/xIIC_IO;../../G0_COMMON/xCRC16;../../G0_COMMON/xMisc;../../G0_COMMON/adc_dev;../../G0_COMMON/usr_log;../../G0_COMMON/disk;../../G0_COMMON/stm_flash;../../G0_COMMON/CW2217</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -414,11 +413,6 @@
         <Group>
           <GroupName>Drivers/STM32F3xx_HAL_Driver</GroupName>
           <Files>
-            <File>
-              <FileName>stm32f3xx_ll_usb.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_usb.c</FilePath>
-            </File>
             <File>
               <FileName>stm32f3xx_hal_adc.c</FileName>
               <FileType>1</FileType>
@@ -495,6 +489,118 @@
               <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f3xx_hal_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_crc.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>stm32f3xx_hal_crc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_crc_ex.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
               <FileName>stm32f3xx_hal_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c</FilePath>
@@ -524,16 +630,6 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f3xx_hal_pcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f3xx_hal_pcd_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -553,6 +649,26 @@
               <FileName>board.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\board\board.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usr/stm_flash</GroupName>
+          <Files>
+            <File>
+              <FileName>stm_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\stm_flash\stm_flash.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usr/disk</GroupName>
+          <Files>
+            <File>
+              <FileName>disk.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\disk\disk.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -668,6 +784,36 @@
               <FileName>misc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\G0_COMMON\xMisc\misc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usr/adc_dev</GroupName>
+          <Files>
+            <File>
+              <FileName>adc_dev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\adc_dev\adc_dev.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usr/log</GroupName>
+          <Files>
+            <File>
+              <FileName>user_log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\usr_log\user_log.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usr/cw2217</GroupName>
+          <Files>
+            <File>
+              <FileName>CW2217.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\CW2217\CW2217.c</FilePath>
             </File>
           </Files>
         </Group>

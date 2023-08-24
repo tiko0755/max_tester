@@ -1,7 +1,7 @@
 tester_f373\iic_io.o: ..\..\G0_COMMON\xIIC_IO\IIC_IO.c
 tester_f373\iic_io.o: ..\..\G0_COMMON\xIIC_IO\IIC_IO.h
-tester_f373\iic_io.o: ..\..\G0_COMMON\xMisc\misc.h
-tester_f373\iic_io.o: ..\Core\Src\board\config.h
+tester_f373\iic_io.o: ../../G0_COMMON/xMisc/misc.h
+tester_f373\iic_io.o: ../Core/Src/board/config.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h
 tester_f373\iic_io.o: ../Core/Inc/stm32f3xx_hal_conf.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h
@@ -27,13 +27,12 @@ tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h
+tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc.h
+tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h
-tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h
-tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usb.h
-tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h
@@ -42,4 +41,4 @@ tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 tester_f373\iic_io.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
-tester_f373\iic_io.o: ..\..\G0_COMMON\xMisc\gpioDecal.h
+tester_f373\iic_io.o: ../../G0_COMMON/xMisc/gpioDecal.h

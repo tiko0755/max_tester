@@ -69,14 +69,28 @@ void Error_Handler(void);
 #define EN_5V_GPIO_Port GPIOB
 #define EN_DC_Pin GPIO_PIN_1
 #define EN_DC_GPIO_Port GPIOB
+#define NFLT_Pin GPIO_PIN_2
+#define NFLT_GPIO_Port GPIOB
+#define EN_BAT_Pin GPIO_PIN_8
+#define EN_BAT_GPIO_Port GPIOE
 #define LED2_Pin GPIO_PIN_9
 #define LED2_GPIO_Port GPIOE
 #define PA8_Pin GPIO_PIN_8
 #define PA8_GPIO_Port GPIOA
+#define I2C2_SCL_Pin GPIO_PIN_6
+#define I2C2_SCL_GPIO_Port GPIOF
+#define I2C2_SDA_Pin GPIO_PIN_7
+#define I2C2_SDA_GPIO_Port GPIOF
+#define PC12_Pin GPIO_PIN_12
+#define PC12_GPIO_Port GPIOC
+#define PD2_Pin GPIO_PIN_2
+#define PD2_GPIO_Port GPIOD
 #define EN_VOUT_Pin GPIO_PIN_5
 #define EN_VOUT_GPIO_Port GPIOB
 #define LED3_Pin GPIO_PIN_6
 #define LED3_GPIO_Port GPIOB
+#define I2C1_SDA_Pin GPIO_PIN_7
+#define I2C1_SDA_GPIO_Port GPIOB
 #define LED1_Pin GPIO_PIN_8
 #define LED1_GPIO_Port GPIOB
 
@@ -94,8 +108,6 @@ extern TIM_HandleTypeDef htim5;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
-
-extern PCD_HandleTypeDef hpcd_USB_FS;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

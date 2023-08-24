@@ -33,14 +33,12 @@ static u8 doCommand(char* buff, u16 len,
         void (*forward)(const char* MSG));
         
 /* Private function prototypes -----------------------------------------------*/
-static u16 task_tick;
 
 void taskIrq(void){
     u8 i;
     for(i=0;i<APP_TIMER_COUNT;i++){
         tmr[i].isr(&tmr[i].rsrc, 1);
     }
-    task_tick++;
 }
 
 /**
@@ -52,18 +50,9 @@ void taskPolling(void){
     if(g_initalDone == 0)    return;
     
     // poll to send out 
-    console.TxPolling(&console.rsrc);
-    rs485.TxPolling(&rs485.rsrc);
-    
     u8 i;
     for(i=0;i<APP_TIMER_COUNT;i++){
         tmr[i].polling(&tmr[i].rsrc);
-    }
-
-    if(task_tick >= 4){
-        console.RxPolling(&console.rsrc);
-        rs485.RxPolling(&rs485.rsrc);    
-        task_tick = 0;
     }
 }
 
@@ -96,10 +85,7 @@ u8 doCommand(char* buff, u16 len,
             xprint("+ok@about(%d,\"%s\")\r\n", g_boardAddr, ABOUT);
             led_flash_answer(100, 30);
         }
-//        else if(promise[0].Cmd(&promise[0].rsrc, buff)){}
-//        else if(promise[1].Cmd(&promise[1].rsrc, buff)){}
-//        else if(promise[2].Cmd(&promise[2].rsrc, buff)){}
-//        else if(promise[3].Cmd(&promise[3].rsrc, buff)){}
+
         else{    xprint("+unknown@%s", buff);    }
     }
     else if(sscanf(buff, "%d.", &i)==1){
@@ -129,6 +115,7 @@ static void forwardRes(void* rsrc, const char* MSG){
 }
 
 static void forwardReq(const char* MSG){
+    
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

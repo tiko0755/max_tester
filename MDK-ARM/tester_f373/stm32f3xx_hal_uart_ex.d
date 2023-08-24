@@ -24,13 +24,12 @@ tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h
+tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc.h
+tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_crc_ex.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h
-tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h
-tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usb.h
-tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
 tester_f373\stm32f3xx_hal_uart_ex.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h
