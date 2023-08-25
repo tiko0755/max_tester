@@ -21,8 +21,6 @@ extern const char COMMON_HELP[];
 
 // gloable var
 extern char g_addrPre[4];
-extern u8 g_baudHost;
-extern u8 g_baud485;
 extern u32 g_errorCode;
 extern u8 g_initalDone;
 
@@ -51,7 +49,6 @@ void printUDP(const char* FORMAT_ORG, ...);
 
 s8 ioWrite(u16 addr, const u8 *pDat, u16 nBytes);
 s8 ioRead(u16 addr, u8 *pDat, u16 nBytes);
-
 
 #endif
 

@@ -1,9 +1,9 @@
 tester_f373\task.o: ..\Core\Src\task\task.c
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 tester_f373\task.o: ..\Core\Src\task\task.h
 tester_f373\task.o: ../../G0_COMMON/xMisc/misc.h
 tester_f373\task.o: ../Core/Src/board/config.h
@@ -14,7 +14,7 @@ tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h
 tester_f373\task.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
 tester_f373\task.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f373xc.h
 tester_f373\task.o: ../Drivers/CMSIS/Include/core_cm4.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 tester_f373\task.o: ../Drivers/CMSIS/Include/cmsis_version.h
 tester_f373\task.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 tester_f373\task.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -22,7 +22,7 @@ tester_f373\task.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 tester_f373\task.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h
 tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h
 tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-tester_f373\task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+tester_f373\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h
 tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h
 tester_f373\task.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h

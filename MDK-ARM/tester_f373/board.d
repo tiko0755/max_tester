@@ -1,7 +1,7 @@
 tester_f373\board.o: ..\Core\Src\board\board.c
-tester_f373\board.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-tester_f373\board.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-tester_f373\board.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 tester_f373\board.o: ..\Core\Src\board\board.h
 tester_f373\board.o: ../../G0_COMMON/xMisc/misc.h
 tester_f373\board.o: ../Core/Src/board/config.h
@@ -12,7 +12,7 @@ tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h
 tester_f373\board.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
 tester_f373\board.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f373xc.h
 tester_f373\board.o: ../Drivers/CMSIS/Include/core_cm4.h
-tester_f373\board.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 tester_f373\board.o: ../Drivers/CMSIS/Include/cmsis_version.h
 tester_f373\board.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 tester_f373\board.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -20,7 +20,7 @@ tester_f373\board.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 tester_f373\board.o: ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h
 tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h
 tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-tester_f373\board.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h
 tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h
 tester_f373\board.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h
@@ -58,6 +58,11 @@ tester_f373\board.o: ../Core/Src/task/led_flash.h
 tester_f373\board.o: ../../G0_COMMON/gpio_output/outputCmd.h
 tester_f373\board.o: ../../G0_COMMON/gpio_input/inputCmd.h
 tester_f373\board.o: ../../G0_COMMON/adc_dev/adc_dev.h
-tester_f373\board.o: ../../G0_COMMON/stm_flash/stm_flash.h
 tester_f373\board.o: ../../G0_COMMON/xIIC_IO/iic_io.h
 tester_f373\board.o: ../../G0_COMMON/CW2217/cw2217.h
+tester_f373\board.o: ../../G0_COMMON/stm_flash/stm_flash.h
+tester_f373\board.o: ../../G0_COMMON/stm_flash/stm_flash_page_def.h
+tester_f373\board.o: ../../G0_COMMON/stm_flash/stm_flash_cmd.h
+tester_f373\board.o: ../../G0_COMMON/disk/disk.h
+tester_f373\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+tester_f373\board.o: ../Core/Src/task/task.h

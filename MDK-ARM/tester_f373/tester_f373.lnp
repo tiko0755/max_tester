@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "tester_f373\startup_stm32f373xc.o"
 "tester_f373\main.o"
 "tester_f373\stm32f3xx_it.o"
@@ -29,6 +29,7 @@
 "tester_f373\system_stm32f3xx.o"
 "tester_f373\board.o"
 "tester_f373\stm_flash.o"
+"tester_f373\stm_flash_cmd.o"
 "tester_f373\disk.o"
 "tester_f373\led_flash.o"
 "tester_f373\task.o"
@@ -48,6 +49,6 @@
 "tester_f373\user_log.o"
 "tester_f373\cw2217.o"
 --strict --scatter "tester_f373\tester_f373.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "tester_f373.map" -o tester_f373\tester_f373.axf
