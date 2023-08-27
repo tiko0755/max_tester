@@ -16,14 +16,22 @@
 #include "user_log.h"
 #include "main.h"
 #include "app_timer.h"
+#include "thread_delay.h"
 #include "gpioDecal.h"
 #include "led_flash.h"
 #include "outputCmd.h"
 #include "inputCmd.h"
 #include "adc_dev.h"
-#include "stm_flash.h"
+#include "adc_dev_cmd.h"
 #include "iic_io.h"
 #include "cw2217.h"
+
+#include "stm_flash.h"
+#include "stm_flash_cmd.h"
+#include "disk.h"
+
+#include "task.h"
+
 
 #define NOUSED_PIN_INDX 255
 
@@ -53,8 +61,6 @@ const char COMMON_HELP[] = {
 };
 char g_addrPre[4] = {0};    //addr precode
 u8 g_initalDone = 0;
-u8 g_baudHost = 4;    //BAUD[4]=115200
-u8 g_baud485 = 4;
 u32 g_errorCode;// = 0;
 /**********************************************
 *  PINs Define
@@ -83,9 +89,6 @@ cmdConsumerDev_t cmdConsumer;
 OUTPUT_DEV_T g_output;
 const PIN_T OUTPUT_PIN[] = {
     {BEEP_GPIO_Port, BEEP_Pin},		// beep
-    {EN_5V_GPIO_Port, EN_5V_Pin},
-    {EN_DC_GPIO_Port, EN_DC_Pin},
-    {EN_VOUT_GPIO_Port, EN_VOUT_Pin},
 };
 
 // POWER CONTROLS
@@ -105,7 +108,6 @@ adcDev_T adcD;
 static u8 brdCmdU8(void* d, u8* CMDu8, u8 len, void (*xprint)(const char* FORMAT_ORG, ...));
 static void forwardToBus(u8* BUFF, u16 len);
 
-
 // IIC DEV
 cw2217_dev_t cw2217[2] = {0};
 IIC_IO_Dev_T iicDev1;
@@ -120,6 +122,13 @@ const PIN_T SCL2 = {SCL2_GPIO_Port, SCL2_Pin};
 /* Private function prototypes -----------------------------------------------*/
 // after GPIO initial, excute this function to enable
 void boardPreInit(void){
+    u8 tmrIndx;
+    // setup app timers
+    for(tmrIndx=0; tmrIndx<APP_TIMER_COUNT; tmrIndx++){
+        setup_appTmr(&tmr[tmrIndx], taskPolling);
+    }
+    thread_delay_init(&tmr[0]);
+    
 //    configRead();
 }
 
@@ -128,44 +137,41 @@ static s32 ubSequenceCompleted;
 static void testHandler(void* e);
 
 void boardInit(void){
-    s32 tmrIndx;
-
-    HAL_GPIO_WritePin(RUNNING.GPIOx, RUNNING.GPIO_Pin, GPIO_PIN_SET);
-    // 
+    u8 tmrIndx = 1;     // tmr[0] has been used for thread_delay
     
+    // power up first
+    HAL_GPIO_WritePin(VOUT_EN0.GPIOx, VOUT_EN0.GPIO_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(VOUT_EN1.GPIOx, VOUT_EN1.GPIO_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(EN_5V.GPIOx, EN_5V.GPIO_Pin, GPIO_PIN_SET);
     
-    // setup app timers
-    for(tmrIndx=0;tmrIndx<APP_TIMER_COUNT;tmrIndx++){
-        setup_appTmr(&tmr[tmrIndx]);
-    }
-    
-    tmrIndx = 0;
     //read board addr
-    setupUartDev(&console, &huart1, &tmr[tmrIndx++], uartTxPool, RX_POOL_LEN, uartRxPool, RX_POOL_LEN, uartRxBuf, RX_BUF_LEN, 4);
+    setupUartDev(&console, &huart1, &tmr[tmrIndx++], uartTxPool, RX_POOL_LEN, uartRxPool, RX_POOL_LEN, uartRxBuf, RX_BUF_LEN, 8);
     memset(g_addrPre,0,4);
     strFormat(g_addrPre, 4, "%d.", g_boardAddr);
     print("%sabout(\"%s\")\r\n", g_addrPre, ABOUT);
-
+    
     logInitial(printS);
     
+    disk_setup(stmFlsh_read, stmFlsh_write);
+
     IIC_IO_Setup(&iicDev1, &SCL1, &SDA1);
-    cw2217_setup(&cw2217[0], &iicDev1);
+    cw2217_setup(&cw2217[0], &iicDev1, &tmr[tmrIndx++]);
     
     IIC_IO_Setup(&iicDev2, &SCL2, &SDA2);
-    cw2217_setup(&cw2217[1], &iicDev2);
+    cw2217_setup(&cw2217[1], &iicDev2, &tmr[tmrIndx++]);
     
     printS("setup adc...");
-    ADC_Setup(&adcD, &hadc1, &tmr[tmrIndx++], NULL, NULL, 0);
+    ADC_Setup(&adcD, &hadc1, &tmr[tmrIndx++], 100, usrRead, usrWrite, USR_ADC_BASE);   // setup ADC work thread
     printS("ok\r\n");
     
     // application initial
     printS("setup led_flash...");
-    led_flash_init(&tmr[tmrIndx++], &RUNNING, 100);     // now, it can run itself
+    led_flash_init(&tmr[tmrIndx++], &RUNNING, 100);     // setup LED work thread
     printS("ok\r\n");
 
     printS("setup gpio driver...");
-    outputDevSetup(&g_output, OUTPUT_PIN, 4, 0x00000000);
-    InputDevSetup(&g_input, OUTPUT_PIN, 5);
+    outputDevSetup(&g_output, OUTPUT_PIN, 1, 0x00000000);   
+    InputDevSetup(&g_input, INPUT_PIN, 2);
     printS("ok\r\n");
     
     printS("setup cmdConsumer...");
@@ -184,27 +190,18 @@ void boardInit(void){
     // get ready, start to work
     console.StartRcv(&console.rsrc);
 
-    if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
-    {
-        /* Calibration Error */
-        Error_Handler();
-    }
-
     tmr[tmrIndx].start(&tmr[tmrIndx].rsrc, 1000, POLLING_REPEAT, testHandler, NULL);
     tmrIndx++;
 
-
-    
-    HAL_GPIO_WritePin(VOUT_EN0.GPIOx, VOUT_EN0.GPIO_Pin, GPIO_PIN_SET);
-    HAL_GPIO_WritePin(VOUT_EN1.GPIOx, VOUT_EN1.GPIO_Pin, GPIO_PIN_SET);
-    HAL_GPIO_WritePin(EN_5V.GPIOx, EN_5V.GPIO_Pin, GPIO_PIN_SET);
-    
-    
-    
     g_initalDone = 1;
 
-//    print("flashSize: 0x%08x\n", *(u32*)FLASH_SIZE_DATA_REGISTER);
+    int ret;
+    log("setup cw2217[0]..");
+    ret = cw2217[0].init(&cw2217[0].rsrc);
     
+    log("setup cw2217[1]..");
+    ret = cw2217[1].init(&cw2217[1].rsrc);
+
     print("%d timers have been used", tmrIndx);
     printS("initial complete, type \"help\" for help\n");
 }
@@ -225,9 +222,23 @@ static void testHandler(void* e){
 //    print("%d ", adcD.rsrc.adcSeries[7][0]);
 //    printS("\n");
     
-    cw2217[0].update_chip_id(&cw2217[0].rsrc);
-//    cw2217[1].get_chip_id(&cw2217[1].rsrc);
-
+//    if(cw2217[0].update_more(&cw2217[0].rsrc) == 0){
+//        log("<%s [0] soc:%d v:%d i:%d t:%d >", __func__,  
+//                                cw2217[0].rsrc.ui_soc,
+//                                cw2217[0].rsrc.voltage,
+//                                cw2217[0].rsrc.cw_current,
+//                                cw2217[0].rsrc.temp
+//        );
+//    }
+//    
+//    if(cw2217[1].update_more(&cw2217[1].rsrc) == 0){
+//        log("<%s [1] soc:%d v:%d i:%d t:%d >", __func__,  
+//                                cw2217[1].rsrc.ui_soc,
+//                                cw2217[1].rsrc.voltage,
+//                                cw2217[1].rsrc.cw_current,
+//                                cw2217[1].rsrc.temp
+//        );
+//    }
 }
 
 
@@ -308,49 +319,57 @@ u8 brdCmd(const char* CMD, void (*xprint)(const char* FORMAT_ORG, ...)){
         adcD.stop(&adcD.rsrc);
         return 1;
     }
+    else if(strncmp(CMD, "charger.info", strlen("charger.info")) == 0){
+        if(cw2217[1].update_more(&cw2217[1].rsrc) == 0){
+            xprint("+ok@%d.charger.info(%d,%d)\r\n", brdAddr, cw2217[1].rsrc.voltage, cw2217[1].rsrc.cw_current);
+        }
+        else{
+            xprint("+err@%d.charger.info('NOT_READY')\r\n", brdAddr);
+        }
+        return 1;
+    }
+    else if(strncmp(CMD, "batt.info", strlen("batt.info")) == 0){
+        if(cw2217[0].update_more(&cw2217[0].rsrc) == 0){
+            xprint("+ok@%d.batt.info(%d,%d)\r\n", brdAddr, cw2217[0].rsrc.voltage, cw2217[0].rsrc.cw_current);
+        }
+        else{
+            xprint("+err@%d.batt.info('NOT_READY')\r\n", brdAddr);
+        }
+        return 1;
+    }
+    
+    else if(stmFlsh_Cmd(NULL, (u8*)CMD, strlen(CMD), print)){
+        return 1;
+    }
+    else if(adc_dev_cmd(&adcD, (u8*)CMD, strlen(CMD), print)){
+        return 1;
+    }
+  
+    
     else if(strncmp(CMD, "restart ", strlen("restart ")) == 0){
         HAL_NVIC_SystemReset();
         return 1;
     }
     
     else if(sscanf(CMD, "reg.write %d 0x%x ", &i, &j)==2){
-        u8 buff[4] = {0};
-        
-        
-        buff[0] = j&0xff;    j >>= 8;    
-        buff[1] |= j&0xff;   j >>= 8;
-        buff[2] |= j&0xff;   j >>= 8;
-        buff[3] |= j&0xff;   
-        
-        
-        ioWriteAsyn(i, buff, 4, NULL);
-        xprint("+ok@%d.reg.write(%d, 0x%02x%02x%02x%02x)\r\n", brdAddr, i, buff[3],buff[2],buff[1],buff[0]);
+        stmFlsh_write(i, (u8*)&j, 4);
+        xprint("+ok@%d.reg.write(%d, 0x%08x)\r\n", brdAddr, i, j);
         return 1;
     }
-    
-    else if(sscanf(CMD, "reg.readx %d ", &i)==1){
-        u32 x;
-        u8* p = (u8*)i;
-        
-        x = *p; x <<=8; p++;
-        x |= *p;x <<=8; p++;
-        x |= *p;x <<=8; p++;
-        x |= *p;
 
-        xprint("+ok@%d.reg.readx(%d,%d)\r\n", brdAddr, i, x);
-        return 1;
-    }
-    
     else if(sscanf(CMD, "reg.read %d ", &i)==1){
-        u32 x;
-        u8* p = ioReadDMA(i);
-        
-        x = *p++; x <<=8;
-        x |= *p++;x <<=8; 
-        x |= *p++;x <<=8;
-        x |= *p;
-
+        i &= 0xfffffffc;
+        u32 x = *(u32*)stmFlsh_readDMA(i);
         xprint("+ok@%d.reg.read(%d,0x%08x)\r\n", brdAddr, i, x);
+        return 1;
+    }
+    
+    else if(strncmp(CMD, "format", strlen("format")) == 0){
+        if(stmFlsh_format()==0){
+            xprint("+ok@%d.format()\r\n", brdAddr);
+        }else{
+            xprint("+ok@%d.format()\r\n", brdAddr);
+        }
         return 1;
     }
 
@@ -422,6 +441,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+    
 }
 
 /**

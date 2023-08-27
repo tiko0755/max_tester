@@ -47,3 +47,5 @@ tester_f373\adc_dev.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex
 tester_f373\adc_dev.o: ../../G0_COMMON/xMisc/usr_typedef.h
 tester_f373\adc_dev.o: ../../G0_COMMON/app_timer/app_timer.h
 tester_f373\adc_dev.o: ../../G0_COMMON/usr_log/user_log.h
+tester_f373\adc_dev.o: ../../G0_COMMON/xCRC16/crc16.h
+tester_f373\adc_dev.o: ../../G0_COMMON/app_timer/thread_delay.h

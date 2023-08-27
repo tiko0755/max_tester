@@ -42,6 +42,9 @@ tester_f373\stm_flash.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_e
 tester_f373\stm_flash.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 tester_f373\stm_flash.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 tester_f373\stm_flash.o: ../../G0_COMMON/xMisc/usr_typedef.h
+tester_f373\stm_flash.o: ..\..\G0_COMMON\stm_flash\stm_flash_page_def.h
 tester_f373\stm_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 tester_f373\stm_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 tester_f373\stm_flash.o: ../../G0_COMMON/usr_log/user_log.h
+tester_f373\stm_flash.o: ../../G0_COMMON/app_timer/thread_delay.h
+tester_f373\stm_flash.o: ../../G0_COMMON/app_timer/app_timer.h

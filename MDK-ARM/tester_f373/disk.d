@@ -43,5 +43,8 @@ tester_f373\disk.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
 tester_f373\disk.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 tester_f373\disk.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 tester_f373\disk.o: ../../G0_COMMON/xMisc/usr_typedef.h
+tester_f373\disk.o: ../../G0_COMMON/stm_flash/stm_flash.h
+tester_f373\disk.o: ../../G0_COMMON/stm_flash/stm_flash_page_def.h
 tester_f373\disk.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 tester_f373\disk.o: ../../G0_COMMON/usr_log/user_log.h
+tester_f373\disk.o: ../../G0_COMMON/xCRC16/CRC16.h

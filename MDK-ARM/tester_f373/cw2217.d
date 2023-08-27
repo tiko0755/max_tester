@@ -42,4 +42,8 @@ tester_f373\cw2217.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
 tester_f373\cw2217.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 tester_f373\cw2217.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 tester_f373\cw2217.o: ../../G0_COMMON/xIIC_IO/IIC_IO.h
+tester_f373\cw2217.o: ../../G0_COMMON/app_timer/app_timer.h
+tester_f373\cw2217.o: ../../G0_COMMON/xMisc/usr_typedef.h
+tester_f373\cw2217.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 tester_f373\cw2217.o: ../../G0_COMMON/usr_log/user_log.h
+tester_f373\cw2217.o: ../../G0_COMMON/app_timer/thread_delay.h

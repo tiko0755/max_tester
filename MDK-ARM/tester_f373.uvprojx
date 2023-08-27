@@ -369,7 +369,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F373xC</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Drivers/CMSIS/Include;../Core/Src/board;../Core/Src/task;../../G0_COMMON/app_timer;../../G0_COMMON/cmd_consumer;../../G0_COMMON/xUartDev;../../G0_COMMON/xRingBuffer;../../G0_COMMON/gpio_input;../../G0_COMMON/gpio_output;../../G0_COMMON/xIIC_IO;../../G0_COMMON/xCRC16;../../G0_COMMON/xMisc;../../G0_COMMON/adc_dev;../../G0_COMMON/usr_log;../../G0_COMMON/disk;../../G0_COMMON/stm_flash;../../G0_COMMON/CW2217</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc;../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F3xx/Include;../Drivers/CMSIS/Include;../Core/Src/board;../Core/Src/task;../../G0_COMMON/app_timer;../../G0_COMMON/cmd_consumer;../../G0_COMMON/xUartDev;../../G0_COMMON/xRingBuffer;../../G0_COMMON/gpio_input;../../G0_COMMON/gpio_output;../../G0_COMMON/xIIC_IO;../../G0_COMMON/xCRC16;../../G0_COMMON/xMisc;../../G0_COMMON/adc_dev;../../G0_COMMON/usr_log;../../G0_COMMON/disk;../../G0_COMMON/stm_flash;../../G0_COMMON/CW2217;..\..\G0_COMMON\stm_flash</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -677,6 +677,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\G0_COMMON\stm_flash\stm_flash.c</FilePath>
             </File>
+            <File>
+              <FileName>stm_flash_Cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\stm_flash\stm_flash_Cmd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -711,6 +716,11 @@
               <FileName>app_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\G0_COMMON\app_timer\app_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>thread_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\app_timer\thread_delay.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -811,6 +821,11 @@
               <FileName>adc_dev.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\G0_COMMON\adc_dev\adc_dev.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc_dev_cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\G0_COMMON\adc_dev\adc_dev_cmd.c</FilePath>
             </File>
           </Files>
         </Group>
