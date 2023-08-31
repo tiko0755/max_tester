@@ -351,16 +351,31 @@ u8 brdCmd(const char* CMD, void (*xprint)(const char* FORMAT_ORG, ...)){
         return 1;
     }
     
-    else if(sscanf(CMD, "reg.write %d 0x%x ", &i, &j)==2){
-        stmFlsh_write(i, (u8*)&j, 4);
-        xprint("+ok@%d.reg.write(%d, 0x%08x)\r\n", brdAddr, i, j);
+    else if(sscanf(CMD, "reg.write %d %d", &i, &j)==2){
+        if(ioWriteReg(i, j) == 0){
+            xprint("+ok@%d.reg.write(%d,%d)\r\n", brdAddr, i, j);
+        }
+        else{
+            xprint("+err@%d.reg.write(%d,%d)\r\n", brdAddr, i, j);
+        }
         return 1;
     }
-
+    else if(sscanf(CMD, "reg.write %d 0x%x", &i, &j)==2){
+        if(ioWriteReg(i, j) == 0){
+            xprint("+ok@%d.reg.write(%d,0x%08x)\r\n", brdAddr, i, j);
+        }
+        else{
+            xprint("+err@%d.reg.write(%d,%d)\r\n", brdAddr, i, j);
+        }
+        return 1;
+    }
     else if(sscanf(CMD, "reg.read %d ", &i)==1){
-        i &= 0xfffffffc;
-        u32 x = *(u32*)stmFlsh_readDMA(i);
-        xprint("+ok@%d.reg.read(%d,0x%08x)\r\n", brdAddr, i, x);
+        if(ioReadReg(i, &j) == 0){
+            xprint("+ok@%d.reg.read(%d,%d)\r\n", brdAddr, i, j);
+        }
+        else{
+            xprint("+err@%d.reg.read(%d)\r\n", brdAddr, i);
+        }
         return 1;
     }
     
